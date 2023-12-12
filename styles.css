@@ -12,6 +12,12 @@
   display: none;
 }
 
+/* slideshow images */
+.slide_styling {
+    width: 100%;
+    filter: brightness(75%);
+}
+
 /* slideshow controls */
 .prev, .next {
   cursor: pointer;
