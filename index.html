@@ -130,7 +130,7 @@
     <!-- TO ADD TO ALL, CURSOR TYPE, HOVER, SELECTION -->
     <div class="w3-row-padding">
         
-        <!-- color -->
+        <!-- Color -->
         <div class="w3-container">
             <p>1. Colour</p>
             <div class="w3-quarter w3-margin-bottom">
@@ -203,6 +203,7 @@
         <!-- Mount -->
         <div class="w3-container">
             <p>3. Mounting Method</p>
+            <!-- Reveal -->
             <div class="w3-half w3-margin-bottom">
                 <ul class="w3-ul w3-light-grey w3-center w3-border w3-margin-right">
                     <li>
@@ -213,6 +214,7 @@
                     </li>
                 </ul>
             </div>
+            <!-- Face -->
             <div class="w3-half w3-margin-bottom">
                 <ul class="w3-ul w3-light-grey w3-center w3-border w3-margin-right">
                     <li>
@@ -228,6 +230,8 @@
         <!-- Sides -->
         <div class="w3-container">
             <p>3. Framing Style</p>
+            
+            <!-- Reveal + Face -->
             <div class="w3-quarter w3-margin-bottom">
                 <ul class="w3-ul w3-light-grey w3-center w3-border w3-margin-right">
                     <li>
@@ -238,6 +242,7 @@
                     </li>
                 </ul>
             </div>
+            <!-- Reveal -->
             <div class="w3-quarter w3-margin-bottom">
                 <ul class="w3-ul w3-light-grey w3-center w3-border w3-margin-right">
                     <li>
@@ -248,16 +253,18 @@
                     </li>
                 </ul>
             </div>
+            <!-- Reveal -->
             <div class="w3-quarter w3-margin-bottom">
                 <ul class="w3-ul w3-light-grey w3-center w3-border w3-margin-right">
                     <li>
                         <img src="/img/options/sides_c.png" style="width: 150px; height: 150px" onclick="" alt="4 sides with sill plate">
                     </li>
                     <li class="w3-padding-16">
-                        <p>4 sides with sill bottom</p>
+                        <p>Sill Bottom</p>
                     </li>
                 </ul>
             </div>
+            <!-- Reveal -->
             <div class="w3-quarter w3-margin-bottom">
                 <ul class="w3-ul w3-light-grey w3-center w3-border w3-margin-right">
                     <li>
@@ -268,16 +275,127 @@
                     </li>
                 </ul>
             </div>
+            <!-- Options for Fixed -->
         <div>
 
-        <!-- Frame -->
+        <!-- Frame Type -->
         <div class="w3-container">
             <p>5. Frame Type</p>
+
+            <!-- Hinged + Reveal -->
+            <div id="hinged_reveal" class="visibility:visible">
+                <div class="w3-half w3-margin-bottom">
+                    <ul class="w3-ul w3-light-grey w3-center w3-border w3-margin-right">
+                        <li>
+                            <img src="/img/options/frame_a.png" style="width: 150px; height: 150px" onclick="" alt="large Z">
+                        </li>
+                        <li class="w3-padding-16">
+                            <p>Large Z-Frame</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w3-half w3-margin-bottom">
+                    <ul class="w3-ul w3-light-grey w3-center w3-border w3-margin-right">
+                        <li>
+                            <img src="/img/options/frame_b.png" style="width: 150px; height: 150px" onclick="" alt="small Z">
+                        </li>
+                        <li class="w3-padding-16">
+                            <p>Small Z-Frame</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w3-half w3-margin-bottom">
+                    <ul class="w3-ul w3-light-grey w3-center w3-border w3-margin-right">
+                        <li>
+                            <img src="/img/options/frame_c.png" style="width: 150px; height: 150px" onclick="" alt="reveal L">
+                        </li>
+                        <li class="w3-padding-16">
+                            <p>L Frame</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Hinged + Face -->
+            <div id="hinged_face" class="visibility:hidden">
+                <div class="w3-half w3-margin-bottom">
+                    <ul class="w3-ul w3-light-grey w3-center w3-border w3-margin-right">
+                        <li>
+                            <img src="/img/options/frame_d.png" style="width: 150px; height: 150px" onclick="" alt="large face fit L">
+                        </li>
+                        <li class="w3-padding-16">
+                            <p>Face-Fit Large L</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w3-half w3-margin-bottom">
+                    <ul class="w3-ul w3-light-grey w3-center w3-border w3-margin-right">
+                        <li>
+                            <img src="/img/options/frame_e.png" style="width: 150px; height: 150px" onclick="" alt="small face fit L">
+                        </li>
+                        <li class="w3-padding-16">
+                            <p>Face-Fit Small L</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Fixed -->
+            <div id="fixed" class="visibility:hidden">
+                <div class="w3-half w3-margin-bottom">
+                    <ul class="w3-ul w3-light-grey w3-center w3-border w3-margin-right">
+                        <li>
+                            <img src="/img/options/frame_e.png" style="width: 150px; height: 150px" onclick="" alt="alu track">
+                        </li>
+                        <li class="w3-padding-16">
+                            <p>Aluminium Tracks</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
 
         <!-- Midrail -->
         <div class="w3-container">
             <p>6. Midrail</p>
+            <!-- Centre -->
+            <div class="w3-half w3-margin-bottom">
+                <ul class="w3-ul w3-light-grey w3-center w3-border w3-margin-right">
+                    <li>
+                        <img src="/img/options/midrail_a.png" style="width: 150px; height: 150px" onclick="" alt="centre midrail">
+                    </li>
+                    <li class="w3-padding-16">
+                        <p>Centre Midrail</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- Varied -->
+            <div class="w3-half w3-margin-bottom">
+                <ul class="w3-ul w3-light-grey w3-center w3-border w3-margin-right">
+                    <li>
+                        <img src="/img/options/midrail_b.png" style="width: 150px; height: 150px" onclick="" alt="custom midrail">
+                    </li>
+                    <li class="w3-padding-16">
+                        <p>Custom Midrail</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Custom Midrail Height -->
+        <div class="w3-container visibility:hidden">
+            <p>7. Custom Midrail Height</p>
+            <div class="w3-half w3-margin-bottom">
+                <ul class="w3-ul w3-light-grey w3-center w3-border w3-margin-right">
+                    <li class="w3-padding-16">
+                        <label>Height (mm)</label>
+                    </li>
+                    <li class="w3-padding-16">
+                        <input class="w3-input w3-border" type="text" name="Height" required>
+                    </li>
+                </ul>
+            </div>
         </div>
 
     </div>
