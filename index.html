@@ -127,6 +127,7 @@
     </div>
 
     <!-- Order Pipeline -->
+    <!-- TO ADD TO ALL, CURSOR TYPE, HOVER, SELECTION -->
     <div class="w3-row-padding">
         
         <!-- color -->
@@ -145,7 +146,7 @@
             <div class="w3-quarter w3-margin-bottom">
                 <ul class="w3-ul w3-light-grey w3-center w3-border w3-margin-right">
                     <li>
-                        <img src="/img/options/color_b.png" style="width: 150px; height: 150px" onclick="" alt="vivid white">
+                        <img src="/img/options/color_b.png" style="width: 150px; height: 150px" onclick="" alt="bright white">
                     </li>
                     <li class="w3-padding-16">
                         <p>Bright White</p>
@@ -155,7 +156,7 @@
             <div class="w3-quarter w3-margin-bottom">
                 <ul class="w3-ul w3-light-grey w3-center w3-border w3-margin-right">
                     <li>
-                        <img src="/img/options/color_c.png" style="width: 150px; height: 150px" onclick="" alt="vivid white">
+                        <img src="/img/options/color_c.png" style="width: 150px; height: 150px" onclick="" alt="classic white">
                     </li>
                     <li class="w3-padding-16">
                         <p>Classic White</p>
@@ -165,10 +166,10 @@
             <div class="w3-quarter w3-margin-bottom">
                 <ul class="w3-ul w3-light-grey w3-center w3-border w3-margin-right">
                     <li>
-                        <img src="/img/options/color_d.png" style="width: 150px; height: 150px" onclick="" alt="vivid white">
+                        <img src="/img/options/color_d.png" style="width: 150px; height: 150px" onclick="" alt="off white">
                     </li>
                     <li class="w3-padding-16">
-                        <p>Off White</p>
+                        <p>Off-White</p>
                     </li>
                 </ul>
             </div>
@@ -178,12 +179,24 @@
         <div class="w3-container">
             <p>2. Dimensions</p>
             <div class="w3-half w3-margin-bottom">
-                <label>Height (mm)</label>
-                <input class="w3-input w3-border" type="text" name="Height" required>
+                <ul class="w3-ul w3-light-grey w3-center w3-border w3-margin-right">
+                    <li class="w3-padding-16">
+                        <label>Width (mm)</label>
+                    </li>
+                    <li class="w3-padding-16">
+                        <input class="w3-input w3-border" type="text" name="Width" required>
+                    </li>
+                </ul>
             </div>
             <div class="w3-half w3-margin-bottom">
-                <label>Width (mm)</label>
-                <input class="w3-input w3-border" type="text" name="Width" required>
+                <ul class="w3-ul w3-light-grey w3-center w3-border w3-margin-right">
+                    <li class="w3-padding-16">
+                        <label>Height (mm)</label>
+                    </li>
+                    <li class="w3-padding-16">
+                        <input class="w3-input w3-border" type="text" name="Height" required>
+                    </li>
+                </ul>
             </div>
         </div>
 
@@ -191,19 +204,71 @@
         <div class="w3-container">
             <p>3. Mounting Method</p>
             <div class="w3-half w3-margin-bottom">
-                <img src="/img/options/mount_a.png" style="width: 150px; height: 150px" onclick="" alt="vivid white">
-                <button class="w3-button w3-white w3-padding-large w3-hover-black">Reveal-Fit</button>
+                <ul class="w3-ul w3-light-grey w3-center w3-border w3-margin-right">
+                    <li>
+                        <img src="/img/options/mount_a.png" style="width: 150px; height: 150px" onclick="" alt="reveal-fit">
+                    </li>
+                    <li class="w3-padding-16">
+                        <p>Reveal Fit</p>
+                    </li>
+                </ul>
             </div>
             <div class="w3-half w3-margin-bottom">
-                <img src="/img/options/mount_b.png" style="width: 150px; height: 150px" onclick="" alt="vivid white">
-                <button class="w3-button w3-white w3-padding-large w3-hover-black">Face-Fit</button>
+                <ul class="w3-ul w3-light-grey w3-center w3-border w3-margin-right">
+                    <li>
+                        <img src="/img/options/mount_b.png" style="width: 150px; height: 150px" onclick="" alt="face-fit">
+                    </li>
+                    <li class="w3-padding-16">
+                        <p>Face-Fit</p>
+                    </li>
+                </ul>
             </div>
         </div>
 
         <!-- Sides -->
         <div class="w3-container">
-            <p>4. Framing Style</p>
-        </div>
+            <p>3. Framing Style</p>
+            <div class="w3-quarter w3-margin-bottom">
+                <ul class="w3-ul w3-light-grey w3-center w3-border w3-margin-right">
+                    <li>
+                        <img src="/img/options/sides_a.png" style="width: 150px; height: 150px" onclick="" alt="4 sides">
+                    </li>
+                    <li class="w3-padding-16">
+                        <p>4 Sides</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="w3-quarter w3-margin-bottom">
+                <ul class="w3-ul w3-light-grey w3-center w3-border w3-margin-right">
+                    <li>
+                        <img src="/img/options/sides_b.png" style="width: 150px; height: 150px" onclick="" alt="3 sides">
+                    </li>
+                    <li class="w3-padding-16">
+                        <p>3 Sides</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="w3-quarter w3-margin-bottom">
+                <ul class="w3-ul w3-light-grey w3-center w3-border w3-margin-right">
+                    <li>
+                        <img src="/img/options/sides_c.png" style="width: 150px; height: 150px" onclick="" alt="4 sides with sill plate">
+                    </li>
+                    <li class="w3-padding-16">
+                        <p>4 sides with sill bottom</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="w3-quarter w3-margin-bottom">
+                <ul class="w3-ul w3-light-grey w3-center w3-border w3-margin-right">
+                    <li>
+                        <img src="/img/options/sides_d.png" style="width: 150px; height: 150px" onclick="" alt="0 sides">
+                    </li>
+                    <li class="w3-padding-16">
+                        <p>0 Sides</p>
+                    </li>
+                </ul>
+            </div>
+        <div>
 
         <!-- Frame -->
         <div class="w3-container">
