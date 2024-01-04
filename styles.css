@@ -153,6 +153,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 /* Colors */
 .theme-color,.theme-color:hover{color:#fff!important;background-color:#0e2934!important}
+.theme-color-alt,.theme-color-alt:hover{color:#fff!important;background-color:#e08656!important;}
 .theme-text,.theme-text:hover{color:#e08656!important}
 .theme-border,.theme-border:hover{border-color:#0e2934!important}
 .w3-amber,.w3-hover-amber:hoer{color:#000!important;background-color:#ffc107!important}
