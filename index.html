@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-<title>Shutter Page</title>
+<title>Infinity Shutters</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
@@ -24,14 +24,13 @@
     <nav class="w3-sidebar theme-color w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:250px;font-weight:bold;" id="mySidebar"><br>
         <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
         <div class="w3-container">
-            <h3 class="w3-padding-64"><b>Shutter<br>Website</b></h3>
+            <h3 class="w3-padding-64"><b>Infinity<br>Shutters</b></h3>
         </div>
         <div class="w3-bar-block">
             <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
             <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Showcase</a> 
-            <a href="#products" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Products</a> 
             <a href="#designs" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Designs</a> 
-            <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Pricing</a> 
+            <a href="#purchase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Order Now</a> 
             <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
         </div>
     </nav>
@@ -81,20 +80,9 @@
         <p id="caption"></p>
         </div>
     </div>
-
-    <!-- Services -->
-    <div class="w3-container" id="products" style="margin-top:75px">
-        <h1 class="w3-xxxlarge theme-text"><b>Products.</b></h1>
-        <hr style="width:50px;border:5px solid theme-color" class="w3-round">
-        <p>Shutters - Both in Aluminium and in Polymer</p>
-        <p>Some text about our products - what we do and what we offer. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
-    </div>
     
     <!-- Designs -->
-    <div class="w3-container" id="designs" style="margin-top:75px">
+    <div class="w3-container" id="purchase" style="margin-top:75px">
         <h1 class="w3-xxxlarge theme-text"><b>Designs.</b></h1>
         <hr style="width:50px;border:5px solid theme-color" class="w3-round">
         <p>Function and form.</p>
@@ -140,55 +128,49 @@
     </div>
 
     <!-- Pricing Tables -->
-    <div class="w3-container" id="pricing" style="margin-top:75px">
-        <h1 class="w3-xxxlarge theme-text"><b>Pricing.</b></h1>
+    <div class="w3-container" id="purchase" style="margin-top:75px">
+        <h1 class="w3-xxxlarge theme-text"><b>Order Now.</b></h1>
         <hr style="width:50px;border:5px solid theme-color" class="w3-round">
-        <p>Surely we can provide estimates per square meter? Also explain some stuff about what we offer as a service. Lorem ipsum etc.</p>
+        <p>Design and order your own perfect shutters, installed by us or DIY!</p>
     </div>
 
+    <!-- Order Pipeline -->>
     <div class="w3-row-padding">
-        <div class="w3-half w3-margin-bottom">
-        <ul class="w3-ul w3-light-grey w3-center">
-            <li class="w3-dark-grey w3-xlarge w3-padding-32">DIY</li>
-            <li class="w3-padding-16">-</li>
-            <li class="w3-padding-16">-</li>
-            <li class="w3-padding-16">Limited range of options</li>
-            <li class="w3-padding-16">Polymer Only</li>
-            <li class="w3-padding-16">20 year warranty*</li>
-            <li class="w3-padding-16">
-            <h2>??AUD</h2>
-            <span class="w3-opacity">per m²</span>
-            </li>
-            <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Order Now</button>
-            </li>
-        </ul>
-        </div>
-            
-        <div class="w3-half">
-        <ul class="w3-ul w3-light-grey w3-center">
-            <li class="theme-color w3-xlarge w3-padding-32">PRO</li>
-            <li class="w3-padding-16">Measuring service</li>
-            <li class="w3-padding-16">Installation service</li>
-            <li class="w3-padding-16">FULL range of options</li>
-            <li class="w3-padding-16">Polymer and Aluminium</li>
-            <li class="w3-padding-16">20 year warranty</li>
-            <li class="w3-padding-16">
-            <h2>???AUD</h2>
-            <span class="w3-opacity">per m²</span>
-            </li>
-            <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button theme-color w3-padding-large w3-hover-black">Order Now</button>
-            </li>
-        </ul>
-        </div>
+
+         <!-- Control buttons -->
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+                <button class="btn" onclick="filterSelection('animals')"> Animals</button>
+                <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
+                <button class="btn" onclick="filterSelection('colors')"> Colors</button>
+            </div>
+
+            <!-- The filterable elements. -->
+            <div class="container">
+                <div class="filterDiv cars">BMW</div>
+                <div class="filterDiv colors fruits">Orange</div>
+                <div class="filterDiv cars">Volvo</div>
+                <div class="filterDiv colors">Red</div>
+                <div class="filterDiv cars">Ford</div>
+                <div class="filterDiv colors">Blue</div>
+                <div class="filterDiv animals">Cat</div>
+                <div class="filterDiv animals">Dog</div>
+                <div class="filterDiv fruits">Melon</div>
+                <div class="filterDiv fruits animals">Kiwi</div>
+                <div class="filterDiv fruits">Banana</div>
+                <div class="filterDiv fruits">Lemon</div>
+                <div class="filterDiv animals">Cow</div>
+            </div> 
+
+        
     </div>
     
     <!-- Contact -->
     <div class="w3-container" id="contact" style="margin-top:75px">
         <h1 class="w3-xxxlarge theme-text"><b>Contact.</b></h1>
         <hr style="width:50px;border:5px solid theme-color" class="w3-round">
-        <p>Do you want to eqnuire further? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+        <p>Do you want to enquire further? Would you prefer to have someone else to do the measuring? Fill out the form and we'll get in touch. We love meeting new people!</p>
         <form action="/action_page.php" target="_blank">
             <div class="w3-section">
                 <label>Name</label>
