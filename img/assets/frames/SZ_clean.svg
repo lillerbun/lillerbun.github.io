@@ -26,7 +26,7 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="0.1850414"
-     inkscape:cx="956.5427"
+     inkscape:cx="437.73988"
      inkscape:cy="2150.87"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
@@ -35,7 +35,7 @@
      inkscape:window-maximized="1"
      inkscape:current-layer="Page" />
   <title
-     id="title2">FreeCAD SVG Export</title>
+     id="title2">SVG Graphics</title>
   <desc
      id="desc4">Drawing page: Page exported from FreeCAD document: inf_frame_Z</desc>
   <defs
@@ -939,7 +939,12 @@
     <rdf:RDF>
       <cc:Work
          rdf:about="">
-        <dc:title>FreeCAD SVG Export</dc:title>
+        <dc:title>SVG Graphics</dc:title>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Lily M.</dc:title>
+          </cc:Agent>
+        </dc:creator>
       </cc:Work>
     </rdf:RDF>
   </metadata>
